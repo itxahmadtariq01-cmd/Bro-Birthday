@@ -603,39 +603,13 @@ function toggleMusic() {
             });
         }
     </script>
-    <!-- Final Custom Play Button Connected to song.mp3 -->
-<div style="position: fixed; bottom: 25px; right: 25px; z-index: 999999;">
-    <button id="custom-play-btn" onclick="playLocalSong()" style="background: linear-gradient(135deg, #ff416c, #ff4b2b); color: white; border: none; padding: 14px 24px; border-radius: 35px; font-family: sans-serif; font-size: 15px; font-weight: bold; cursor: pointer; box-shadow: 0 6px 20px rgba(0,0,0,0.4); display: flex; align-items: center; gap: 10px; transition: 0.2s;">
-        <span id="btn-icon">🎵</span> <span id="btn-text">Play Surprise Song</span>
-    </button>
+    <!-- 100% Guaranteed Working Native Audio Player -->
+<div style="position: fixed; bottom: 25px; right: 25px; z-index: 999999; background: #111827; padding: 10px 15px; border-radius: 30px; box-shadow: 0 5px 20px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.2);">
+    <audio controls preload="auto" style="height: 35px; width: 200px;">
+        <source src="song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
 </div>
-
-<audio id="local-bg-audio" loop preload="auto">
-    <source src="song.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-</audio>
-
-<script>
-    function playLocalSong() {
-        const audio = document.getElementById('local-bg-audio');
-        const btnText = document.getElementById('btn-text');
-        const btnIcon = document.getElementById('btn-icon');
-
-        if (audio.paused) {
-            audio.play().then(() => {
-                btnIcon.innerHTML = "⏸";
-                btnText.innerHTML = "Pause Song";
-            }).catch(error => {
-                console.log("Playback blocked:", error);
-                alert("Ek baar aur click karein!");
-            });
-        } else {
-            audio.pause();
-            btnIcon.innerHTML = "🎵";
-            btnText.innerHTML = "Play Surprise Song";
-        }
-    }
-</script>
 
 
 
