@@ -3,301 +3,422 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday Usama Bin Tariq 🎉</title>
+    <title>Engr. Usama Bin Tariq // Core System & Ultimate Birthday Protocol 🚀</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Plus Jakarta Sans -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Confetti Library -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <style>
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: #030305;
+            background-color: #050508;
             color: #f3f4f6;
             overflow-x: hidden;
         }
-        /* Custom Luxury Glass & Glow */
+        .font-code {
+            font-family: 'JetBrains Mono', monospace;
+        }
         .glass-card {
-            background: rgba(15, 15, 22, 0.75);
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
+            background: rgba(12, 12, 22, 0.92);
+            backdrop-filter: blur(35px);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            box-shadow: 0 30px 70px -15px rgba(0, 0, 0, 0.95);
         }
-        .neon-glow {
-            box-shadow: 0 0 40px rgba(168, 85, 247, 0.3);
-            border-color: rgba(168, 85, 247, 0.5);
+        
+        .neon-emerald { transition: all 0.5s ease; }
+        .neon-emerald:hover {
+            box-shadow: 0 0 50px rgba(16, 185, 129, 0.5);
+            border-color: rgba(16, 185, 129, 0.9);
+            transform: translateY(-6px);
         }
-        .cyan-glow {
-            box-shadow: 0 0 40px rgba(6, 182, 212, 0.3);
-            border-color: rgba(6, 182, 212, 0.5);
+
+        .neon-indigo { transition: all 0.5s ease; }
+        .neon-indigo:hover {
+            box-shadow: 0 0 50px rgba(99, 102, 241, 0.5);
+            border-color: rgba(99, 102, 241, 0.9);
+            transform: translateY(-6px);
         }
-        .gold-glow {
-            text-shadow: 0 0 25px rgba(251, 191, 36, 0.5);
+
+        .neon-amber { transition: all 0.5s ease; }
+        .neon-amber:hover {
+            box-shadow: 0 0 50px rgba(245, 158, 11, 0.5);
+            border-color: rgba(245, 158, 11, 0.9);
+            transform: translateY(-6px);
         }
-        /* PERFECT IMAGE FIT: No black bars, showing faces properly */
+
+        .neon-cyan { transition: all 0.5s ease; }
+        .neon-cyan:hover {
+            box-shadow: 0 0 50px rgba(6, 182, 212, 0.5);
+            border-color: rgba(6, 182, 212, 0.9);
+            transform: translateY(-6px);
+        }
+
         .portrait-img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             object-position: center top;
         }
-        /* Hide Scrollbar for clean cinematic look */
+
+        .scanlines {
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.3) 50%), linear-gradient(90deg, rgba(16, 185, 129, 0.03), rgba(99, 102, 241, 0.02), rgba(6, 182, 212, 0.03));
+            background-size: 100% 4px, 6px 100%;
+        }
+
         ::-webkit-scrollbar { width: 6px; }
-        ::-webkit-scrollbar-track { background: #030305; }
-        ::-webkit-scrollbar-thumb { background: #27272a; border-radius: 3px; }
+        ::-webkit-scrollbar-track { background: #050508; }
+        ::-webkit-scrollbar-thumb { background: #10b981; border-radius: 3px; }
     </style>
 </head>
-<body class="selection:bg-purple-600 selection:text-white">
+<body class="selection:bg-emerald-500 selection:text-black">
 
-    <!-- 🎬 1. OPENING SCREEN — CINEMATIC SURPRISE -->
-    <section id="intro-screen" class="relative min-h-screen flex flex-col items-center justify-center text-center px-6 overflow-hidden">
-        <!-- Background Ambient Gradients -->
-        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-900/20 rounded-full blur-3xl pointer-events-none animate-pulse"></div>
-        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-900/15 rounded-full blur-3xl pointer-events-none"></div>
-
-        <div class="z-10 max-w-4xl mx-auto space-y-6 flex flex-col items-center">
-            <h2 class="text-xs sm:text-sm uppercase tracking-[0.3em] text-zinc-400 font-medium">A Journey of Grit, Hustle & Excellence...</h2>
-            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight">
-                HAPPY BIRTHDAY <br/>
-                <span class="bg-gradient-to-r from-white via-purple-300 to-cyan-400 bg-clip-text text-transparent">USAMA BIN TARIQ</span> 🔥
-            </h1>
-            <p class="text-base sm:text-lg text-zinc-400 max-w-xl mx-auto">
-                Celebrating every milestone, every challenge conquered, and the extraordinary leader you are today. ✨🥂
-            </p>
-            <div class="pt-4">
-                <a href="#story-start" class="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-gradient-to-r from-purple-600 to-cyan-600 text-white font-semibold hover:from-purple-500 hover:to-cyan-500 transition-all duration-300 shadow-lg shadow-purple-900/40 transform hover:-translate-y-0.5">
-                    <span>✨ Explore The Journey</span>
-                    <svg class="w-5 h-5 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <div id="story-start"></div>
-
-    <!-- 📸 6-CHAPTER STORYTELLING JOURNEY -->
-    
-    <!-- Chapter 01: The Man & Style -->
-    <section class="min-h-screen py-24 px-6 flex items-center justify-center relative">
-        <div class="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div class="space-y-6 text-center md:text-left">
-                <span class="text-purple-400 font-mono tracking-widest text-sm">CHAPTER 01</span>
-                <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight">The Man & The Aura. <span class="text-zinc-500">😎</span></h2>
-                <p class="text-zinc-300 text-lg leading-relaxed">
-                    A story defined by sharp style, unshakeable focus, and natural leadership. Whether navigating life miles away or staying rooted in our hearts, your presence commands absolute respect. 💯
-                </p>
-                <div class="text-xs uppercase tracking-widest text-zinc-500">Scroll for the next chapter ⬇️</div>
-            </div>
-            <div class="relative group">
-                <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-2xl blur-xl opacity-30 group-hover:opacity-60 transition duration-700"></div>
-                <div class="relative h-[480px] rounded-2xl overflow-hidden glass-card p-2">
-                    <img src="usama1.jpg" alt="Usama Bin Tariq - Chapter 1" class="portrait-img rounded-xl transition duration-700 group-hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop'">
+    <!-- ⚡ BOOT LOADER -->
+    <div id="boot-loader" class="fixed inset-0 z-50 bg-[#050508] flex flex-col items-center justify-center p-6 transition-all duration-700">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(16,185,129,0.15)_0,transparent_75%)] pointer-events-none"></div>
+        
+        <div class="max-w-2xl w-full glass-card p-8 sm:p-10 rounded-3xl border border-emerald-500/40 space-y-6 font-code shadow-2xl relative scanlines">
+            <div class="flex items-center justify-between border-b border-white/15 pb-4">
+                <div class="flex items-center gap-2">
+                    <span class="w-3 h-3 rounded-full bg-red-500 inline-block animate-pulse"></span>
+                    <span class="w-3 h-3 rounded-full bg-yellow-500 inline-block"></span>
+                    <span class="w-3 h-3 rounded-full bg-emerald-500 inline-block"></span>
+                    <span class="text-xs text-zinc-400 ml-2 font-bold">engr_usama_ultimate_protocol_v7.sys</span>
                 </div>
+                <span class="text-xs text-emerald-400 font-bold bg-emerald-950/90 px-3.5 py-1 rounded-full border border-emerald-500/40 animate-pulse">STATUS: MASTER ENGR</span>
             </div>
-        </div>
-    </section>
-
-    <!-- Chapter 02: Memories & Growth -->
-    <section class="min-h-screen py-24 px-6 flex items-center justify-center relative">
-        <div class="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div class="relative group order-2 md:order-1">
-                <div class="absolute -inset-1 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl blur-xl opacity-30 group-hover:opacity-60 transition duration-700"></div>
-                <div class="relative h-[480px] rounded-2xl overflow-hidden glass-card p-2">
-                    <img src="usama2.jpg" alt="Usama Bin Tariq - Chapter 2" class="portrait-img rounded-xl transition duration-700 group-hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop'">
-                </div>
-            </div>
-            <div class="space-y-6 text-center md:text-left order-1 md:order-2">
-                <span class="text-purple-400 font-mono tracking-widest text-sm">CHAPTER 02</span>
-                <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight">The Explorer. <span class="text-zinc-500">🚀</span></h2>
-                <p class="text-zinc-300 text-lg leading-relaxed">
-                    Embracing new environments and adapting to international landscapes with complete composure. Every step forward reflects your courageous and forward-moving mindset. ✨
-                </p>
-                <div class="text-xs uppercase tracking-widest text-zinc-500">Keep scrolling ⬇️</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Chapter 03: The Driving License & Hustle -->
-    <section class="min-h-screen py-24 px-6 flex items-center justify-center relative">
-        <div class="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div class="space-y-6 text-center md:text-left">
-                <span class="text-cyan-400 font-mono tracking-widest text-sm">CHAPTER 03</span>
-                <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight">The True Hustle. <span class="text-zinc-500">🚗</span></h2>
-                <p class="text-zinc-300 text-lg leading-relaxed">
-                    Remember the persistent effort, rigorous tests, and determination behind earning your driving license? Pushing through challenges independently and earning every success is your true signature. 🤲💙
-                </p>
-                <div class="text-xs uppercase tracking-widest text-cyan-400">A journey backed by prayers... ⬇️</div>
-            </div>
-            <div class="relative group">
-                <div class="absolute -inset-1 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-2xl blur-xl opacity-30 group-hover:opacity-60 transition duration-700"></div>
-                <div class="relative h-[480px] rounded-2xl overflow-hidden glass-card p-2 cyan-glow">
-                    <img src="usama3.jpg" alt="Usama Bin Tariq - Chapter 3" class="portrait-img rounded-xl transition duration-700 group-hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=800&auto=format&fit=crop'">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Chapter 04: Degree Complete -->
-    <section class="min-h-screen py-24 px-6 flex items-center justify-center relative">
-        <div class="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div class="relative group order-2 md:order-1">
-                <div class="absolute -inset-1 bg-gradient-to-r from-amber-600 to-purple-600 rounded-2xl blur-xl opacity-30 group-hover:opacity-60 transition duration-700"></div>
-                <div class="relative h-[480px] rounded-2xl overflow-hidden glass-card p-2">
-                    <img src="usama4.jpg" alt="Usama Bin Tariq - Chapter 4" class="portrait-img rounded-xl transition duration-700 group-hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=800&auto=format&fit=crop'">
-                </div>
-            </div>
-            <div class="space-y-6 text-center md:text-left order-1 md:order-2">
-                <span class="text-amber-400 font-mono tracking-widest text-sm">CHAPTER 04</span>
-                <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight">Milestone: Graduation! <span class="gold-glow">🎓</span></h2>
-                <p class="text-zinc-300 text-lg leading-relaxed">
-                    Countless late nights, intense focus, and profound dedication culminated in this monumental achievement. Witnessing your graduation remains an immense source of pride for the entire family. May Allah grant you endless higher elevations! 🤲✨
-                </p>
-                <div class="text-xs uppercase tracking-widest text-zinc-500">Keep scrolling ⬇️</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Chapter 05: Amazon Job Success -->
-    <section class="min-h-screen py-24 px-6 flex items-center justify-center relative">
-        <div class="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div class="space-y-6 text-center md:text-left">
-                <span class="text-emerald-400 font-mono tracking-widest text-sm">CHAPTER 05</span>
-                <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight">The Big Breakthrough: Amazon! <span class="text-zinc-500">💼</span></h2>
-                <p class="text-zinc-300 text-lg leading-relaxed">
-                    When consistent hard work materializes into a prestigious corporate opportunity at Amazon, it proves that excellence always finds its destination. Incredibly proud of your professional triumphs, bahi! 🚀🔥
-                </p>
-                <div class="text-xs uppercase tracking-widest text-emerald-400">The final celebration awaits... 👇</div>
-            </div>
-            <div class="relative group">
-                <div class="absolute -inset-1 bg-gradient-to-r from-emerald-600 to-cyan-600 rounded-2xl blur-xl opacity-30 group-hover:opacity-60 transition duration-700"></div>
-                <div class="relative h-[480px] rounded-2xl overflow-hidden glass-card p-2">
-                    <img src="usama5.jpg" alt="Usama Bin Tariq - Chapter 5" class="portrait-img rounded-xl transition duration-700 group-hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=800&auto=format&fit=crop'">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Chapter 06: Legend Status (The Final Chapter) -->
-    <section class="min-h-screen py-24 px-6 flex items-center justify-center relative">
-        <div class="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div class="relative group order-2 md:order-1">
-                <div class="absolute -inset-1 bg-gradient-to-r from-purple-500 via-pink-500 to-indigo-500 rounded-2xl blur-xl opacity-40 group-hover:opacity-70 transition duration-700"></div>
-                <div class="relative h-[480px] rounded-2xl overflow-hidden glass-card p-2 neon-glow">
-                    <img src="usama6.jpg" alt="Usama Bin Tariq - Chapter 6" class="portrait-img rounded-xl transition duration-700 group-hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop'">
-                </div>
-            </div>
-            <div class="space-y-6 text-center md:text-left order-1 md:order-2">
-                <span class="text-purple-400 font-mono tracking-widest text-sm">CHAPTER 06</span>
-                <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight">Legend Status Unlocked <span class="gold-glow">✨</span></h2>
-                <p class="text-zinc-300 text-lg leading-relaxed">
-                    From early struggles to monumental career peaks, you have consistently proven that resilience wins. You are more than an elder brother—you are a lifelong icon of inspiration. Ready to celebrate? 👇
-                </p>
-                <div class="text-xs uppercase tracking-widest text-purple-400 font-semibold">Let's celebrate! 👇</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 🎂 4. BIRTHDAY CELEBRATION SECTION -->
-    <section class="py-24 px-6 max-w-4xl mx-auto text-center">
-        <div class="glass-card p-10 sm:p-14 rounded-3xl neon-glow relative overflow-hidden space-y-8">
-            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-purple-500 to-transparent"></div>
             
-            <span class="text-xs uppercase tracking-[0.3em] text-purple-400 font-semibold">Special Moment</span>
-            <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">MAKE A WISH 🎂</h2>
-            
-            <!-- Animated Candles Display -->
-            <div class="flex justify-center items-center gap-3 text-3xl sm:text-4xl py-2">
-                <span class="animate-pulse">🕯️</span>
-                <span class="animate-pulse delay-100">🕯️</span>
-                <span class="animate-pulse delay-200">🕯️</span>
-                <span class="text-5xl">🎂</span>
-                <span class="animate-pulse delay-200">🕯️</span>
-                <span class="animate-pulse delay-100">🕯️</span>
-                <span class="animate-pulse">🕯️</span>
+            <div id="terminal-logs" class="text-xs sm:text-sm text-zinc-300 space-y-2 h-44 overflow-hidden">
+                <p class="text-emerald-400">&gt; Compiling engineering architecture &amp; birthday protocols...</p>
+                <p class="text-indigo-400">&gt; Target Subject Verified: <span class="text-white font-bold">Engr. Usama Bin Tariq</span> ⚡🏗️</p>
+                <p class="text-cyan-400">&gt; Mounting All Chapters, Duas &amp; Secret Surprise Vault...</p>
+                <p class="text-amber-400">&gt; System Ready. Let's Deploy The Ultimate Celebration! 🚀</p>
             </div>
 
-            <button onclick="triggerCelebration()" class="px-10 py-4 rounded-2xl bg-white text-black font-extrabold text-base hover:bg-purple-100 transition-all duration-300 transform hover:scale-105 shadow-xl shadow-white/10">
-                🎁 Open Your Birthday Surprise
+            <button onclick="launchExperience()" class="w-full py-4 rounded-2xl bg-gradient-to-r from-emerald-500 via-indigo-600 to-cyan-500 text-black font-extrabold text-xs uppercase tracking-[0.25em] hover:opacity-95 transition-all duration-300 transform hover:scale-[1.02] shadow-2xl shadow-emerald-950 flex items-center justify-center gap-3 cursor-pointer">
+                <span>⚡ INITIALIZE // LAUNCH ULTIMATE PROTOCOL</span>
             </button>
-            <div id="wish-message" class="hidden text-xl font-bold text-purple-300 pt-4 animate-fade-in">
-                HAPPY BIRTHDAY, BAHI! 🥳🥂🔥 May all your secret prayers, career heights, and grandest ambitions come true!
-            </div>
         </div>
-    </section>
+    </div>
 
-    <!-- 💌 5. PERSONAL MESSAGE SECTION -->
-    <section class="py-16 px-6 max-w-3xl mx-auto">
-        <div class="glass-card p-8 sm:p-12 rounded-3xl space-y-6">
-            <div class="flex items-center gap-3">
-                <span class="text-2xl">💬</span>
-                <h3 class="text-xl font-bold tracking-tight">From Your Developer Brother, Ahmad</h3>
+    <!-- MAIN CONTENT WRAPPER -->
+    <div id="main-content" class="opacity-0 transition-opacity duration-1000">
+
+        <!-- HERO SECTION -->
+        <section class="relative min-h-screen flex flex-col items-center justify-center text-center px-6 overflow-hidden">
+            <div class="absolute top-1/4 left-1/4 w-[550px] h-[550px] bg-emerald-900/15 rounded-full blur-[150px] pointer-events-none animate-pulse"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-[550px] h-[550px] bg-indigo-900/15 rounded-full blur-[150px] pointer-events-none"></div>
+
+            <div class="z-10 max-w-4xl mx-auto space-y-6 flex flex-col items-center">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-950/70 border border-emerald-500/30 text-xs text-emerald-300 font-code tracking-wider shadow-md">
+                    <span>⚡ ARCHITECTED &amp; CODED BY AHMAD BIN TARIQ</span>
+                </div>
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight">
+                    HAPPY BIRTHDAY <br/>
+                    <span class="bg-gradient-to-r from-white via-emerald-300 to-cyan-400 bg-clip-text text-transparent">ENGR. USAMA BIN TARIQ</span> 🔥
+                </h1>
+                <p class="text-base sm:text-lg text-zinc-400 max-w-xl mx-auto">
+                    A masterpiece engineering celebration honoring elite intellect, technical breakthroughs, grit, and unstoppable leadership. ✨🥂
+                </p>
+                <div class="pt-4 flex flex-wrap justify-center gap-4">
+                    <a href="#story-start" class="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-gradient-to-r from-emerald-500 to-cyan-600 text-black font-extrabold hover:opacity-90 transition-all duration-300 shadow-xl shadow-emerald-950 transform hover:-translate-y-0.5">
+                        <span>✨ Start Chapter 01</span>
+                        <svg class="w-5 h-5 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                    </a>
+                </div>
             </div>
-            <p class="text-zinc-300 text-base sm:text-lg leading-relaxed">
-                "Bahi, these six chapters represent your remarkable journey of hard work, perseverance, and triumph. From navigating the hurdles of daily life abroad and earning your driving license, to conquering your degree and securing your role at Amazon, I have always admired your unstoppable drive. May this coming year bring you even greater success, radiant health, and boundless happiness. 🤲✨
-            </p>
-            <p class="text-zinc-300 text-base sm:text-lg leading-relaxed">
-                Keep shining, keep scaling new heights, and always remain the phenomenal role model you are. 😎❤️"
-            </p>
-            <div class="pt-2 border-t border-white/10 flex justify-between items-center text-xs text-zinc-400">
-                <span>Ahmad bin Tariq</span>
-                <span class="text-purple-400 font-medium">Made with ❤️ & Code</span>
+        </section>
+
+        <div id="story-start"></div>
+
+        <!-- CHAPTERS 01 TO 06 -->
+        <!-- Chapter 01 -->
+        <section class="min-h-screen py-24 px-6 flex items-center justify-center relative">
+            <div class="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-center md:text-left">
+                    <span class="text-emerald-400 font-code tracking-widest text-xs uppercase bg-emerald-950/70 px-3 py-1 rounded-md border border-emerald-500/30">CHAPTER 01 // 06</span>
+                    <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight">The Engineer &amp; The Aura. <span class="text-zinc-500">😎</span></h2>
+                    <p class="text-zinc-300 text-lg leading-relaxed">
+                        A journey defined by sharp intellect, precise problem-solving, and natural engineering leadership. Whether building systems abroad or staying firmly anchored in our hearts, your presence commands ultimate respect. 💯
+                    </p>
+                    <div class="text-xs font-code text-emerald-400">&gt; Status: Elite engineering aura verified.</div>
+                </div>
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-indigo-600 rounded-2xl blur-xl opacity-30 group-hover:opacity-75 transition duration-700"></div>
+                    <div class="relative h-[480px] rounded-2xl overflow-hidden glass-card p-2 neon-emerald">
+                        <img src="usama1.jpg" alt="Engr. Usama Bin Tariq - Chapter 1" class="portrait-img rounded-xl transition duration-700 group-hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop'">
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- 🔥 6. FINAL CINEMATIC ENDING (Smaller Circle Frame) -->
-    <footer class="min-h-[80vh] flex flex-col items-center justify-center text-center px-6 py-20 relative border-t border-white/5 bg-gradient-to-t from-black to-[#030305]">
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(168,85,247,0.1)_0,transparent_70%)] pointer-events-none"></div>
-
-        <div class="z-10 max-w-2xl mx-auto space-y-8">
-            <!-- Smaller Circle Frame -->
-            <div class="w-24 h-24 mx-auto rounded-full overflow-hidden p-1 glass-card neon-glow">
-                <img src="usama6.jpg" alt="Usama Bin Tariq" class="w-full h-full object-cover object-center rounded-full" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop'">
+        <!-- Chapter 02 -->
+        <section class="min-h-screen py-24 px-6 flex items-center justify-center relative">
+            <div class="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="relative group order-2 md:order-1">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-cyan-600 rounded-2xl blur-xl opacity-30 group-hover:opacity-75 transition duration-700"></div>
+                    <div class="relative h-[480px] rounded-2xl overflow-hidden glass-card p-2 neon-indigo">
+                        <img src="usama2.jpg" alt="Engr. Usama Bin Tariq - Chapter 2" class="portrait-img rounded-xl transition duration-700 group-hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop'">
+                    </div>
+                </div>
+                <div class="space-y-6 text-center md:text-left order-1 md:order-2">
+                    <span class="text-indigo-400 font-code tracking-widest text-xs uppercase bg-indigo-950/70 px-3 py-1 rounded-md border border-indigo-500/30">CHAPTER 02 // 06</span>
+                    <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight">The Global Explorer. <span class="text-zinc-500">🚀</span></h2>
+                    <p class="text-zinc-300 text-lg leading-relaxed">
+                        Adapting to international environments and managing complex landscapes with absolute composure. Every calculated move forward reflects your visionary and resilient mindset. ✨
+                    </p>
+                    <div class="text-xs font-code text-indigo-400">&gt; Status: Scaling global horizons.</div>
+                </div>
             </div>
+        </section>
 
-            <div class="space-y-3 font-mono text-sm tracking-widest text-purple-400">
-                <p>SIX CHAPTERS OF HUSTLE.</p>
-                <p>COUNTLESS MEMORIES.</p>
-                <p>BIGGER DREAMS.</p>
-                <p>NEW ADVENTURES AWAIT.</p>
+        <!-- Chapter 03 -->
+        <section class="min-h-screen py-24 px-6 flex items-center justify-center relative">
+            <div class="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-center md:text-left">
+                    <span class="text-cyan-400 font-code tracking-widest text-xs uppercase bg-cyan-950/70 px-3 py-1 rounded-md border border-cyan-500/30">CHAPTER 03 // 06</span>
+                    <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight">The True Hustle. <span class="text-zinc-500">🚗</span></h2>
+                    <p class="text-zinc-300 text-lg leading-relaxed">
+                        Remember the rigorous driving tests, intense practice, and independent grit required to secure your driving license? Tackling every hurdle head-on with absolute self-reliance is your hallmark. 🤲💙
+                    </p>
+                    <div class="text-xs font-code text-cyan-400">&gt; Status: License test successfully executed.</div>
+                </div>
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-teal-600 rounded-2xl blur-xl opacity-30 group-hover:opacity-75 transition duration-700"></div>
+                    <div class="relative h-[480px] rounded-2xl overflow-hidden glass-card p-2 neon-cyan">
+                        <img src="usama3.jpg" alt="Engr. Usama Bin Tariq - Chapter 3" class="portrait-img rounded-xl transition duration-700 group-hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=800&auto=format&fit=crop'">
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight pt-4">
-                🎂 HAPPY BIRTHDAY USAMA 🎂
-            </h2>
+        <!-- Chapter 04 -->
+        <section class="min-h-screen py-24 px-6 flex items-center justify-center relative">
+            <div class="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="relative group order-2 md:order-1">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-amber-500 to-yellow-600 rounded-2xl blur-xl opacity-30 group-hover:opacity-75 transition duration-700"></div>
+                    <div class="relative h-[480px] rounded-2xl overflow-hidden glass-card p-2 neon-amber">
+                        <img src="usama4.jpg" alt="Engr. Usama Bin Tariq - Chapter 4" class="portrait-img rounded-xl transition duration-700 group-hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=800&auto=format&fit=crop'">
+                    </div>
+                </div>
+                <div class="space-y-6 text-center md:text-left order-1 md:order-2">
+                    <span class="text-amber-400 font-code tracking-widest text-xs uppercase bg-amber-950/70 px-3 py-1 rounded-md border border-amber-500/30">CHAPTER 04 // 06</span>
+                    <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight">Milestone: Engineering Graduation! <span class="text-amber-300">🎓</span></h2>
+                    <p class="text-zinc-300 text-lg leading-relaxed">
+                        Countless rigorous semesters, complex equations, and sleepless nights culminating in your official Engineering Degree! Witnessing your convocation remains a moment of immense pride for the entire family. May Allah elevate your status infinitely! 🤲✨
+                    </p>
+                    <div class="text-xs font-code text-amber-400">&gt; Status: Engineering degree compiled successfully.</div>
+                </div>
+            </div>
+        </section>
 
-            <p class="text-zinc-400 text-sm max-w-md mx-auto">
-                The celebration pauses on this screen... but your greatest achievements are only just beginning. 🚀✨
-            </p>
-        </div>
-    </footer>
+        <!-- Chapter 05 -->
+        <section class="min-h-screen py-24 px-6 flex items-center justify-center relative">
+            <div class="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-center md:text-left">
+                    <span class="text-emerald-400 font-code tracking-widest text-xs uppercase bg-emerald-950/70 px-3 py-1 rounded-md border border-emerald-500/30">CHAPTER 05 // 06</span>
+                    <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight">The Big Breakthrough: Amazon! <span class="text-zinc-500">💼</span></h2>
+                    <p class="text-zinc-300 text-lg leading-relaxed">
+                        When elite professional execution meets opportunity, it lands you a powerhouse role at Amazon! Watching your career soar to these international corporate heights is deeply inspiring, bahi. 🚀🔥
+                    </p>
+                    <div class="text-xs font-code text-emerald-400">&gt; Status: Amazon corporate milestone locked.</div>
+                </div>
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-2xl blur-xl opacity-30 group-hover:opacity-75 transition duration-700"></div>
+                    <div class="relative h-[480px] rounded-2xl overflow-hidden glass-card p-2 neon-emerald">
+                        <img src="usama5.jpg" alt="Engr. Usama Bin Tariq - Chapter 5" class="portrait-img rounded-xl transition duration-700 group-hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=800&auto=format&fit=crop'">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- INTERACTIVE JAVASCRIPT FOR CONFETTI & WISH -->
-    <script>
-        function triggerCelebration() {
-            document.getElementById('wish-message').classList.remove('hidden');
+        <!-- Chapter 06 -->
+        <section class="min-h-screen py-24 px-6 flex items-center justify-center relative">
+            <div class="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="relative group order-2 md:order-1">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-emerald-500 via-indigo-500 to-cyan-500 rounded-2xl blur-xl opacity-40 group-hover:opacity-80 transition duration-700"></div>
+                    <div class="relative h-[480px] rounded-2xl overflow-hidden glass-card p-2 neon-emerald">
+                        <img src="usama6.jpg" alt="Engr. Usama Bin Tariq - Chapter 6" class="portrait-img rounded-xl transition duration-700 group-hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop'">
+                    </div>
+                </div>
+                <div class="space-y-6 text-center md:text-left order-1 md:order-2">
+                    <span class="text-emerald-400 font-code tracking-widest text-xs uppercase bg-emerald-950/70 px-3 py-1 rounded-md border border-emerald-500/30">CHAPTER 06 // 06</span>
+                    <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight">Master Engineer Status <span class="text-emerald-300">✨</span></h2>
+                    <p class="text-zinc-300 text-lg leading-relaxed">
+                        From foundational engineering labs to scaling global corporate heights, you've proven that dedication always wins. You are more than an elder brother—you are a lifelong mentor. Ready to unlock the final surprise? 👇
+                    </p>
+                    <div class="text-xs font-code text-emerald-400">&gt; Status: PEAK ENGINEERING LEVEL UNLOCKED.</div>
+                </div>
+            </div>
+        </section>
 
-            var duration = 3 * 1000;
-            var animationEnd = Date.now() + duration;
-            var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 999 };
-
-            function randomInRange(min, max) {
-                return Math.random() * (max - min) + min;
-            }
-
-            var interval = setInterval(function() {
-                var timeLeft = animationEnd - Date.now();
-
-                if (timeLeft <= 0) {
-                    return clearInterval(interval);
-                }
-
-                var particleCount = 50 * (timeLeft / duration);
+        <!-- BIRTHDAY CELEBRATION INTERACTIVE MODULE -->
+        <section class="py-24 px-6 max-w-4xl mx-auto text-center">
+            <div class="glass-card p-10 sm:p-14 rounded-3xl neon-emerald relative overflow-hidden space-y-8">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-emerald-500 to-transparent"></div>
                 
-                confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } }));
-                confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
-            }, 250);
+                <span class="text-xs uppercase tracking-[0.3em] text-emerald-400 font-semibold font-code">Interactive Birthday Protocol</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">EXECUTE WISH SEQUENCE 🎂</h2>
+                
+                <div class="flex justify-center items-center gap-3 text-3xl sm:text-4xl py-2">
+                    <span class="animate-pulse">🕯️</span>
+                    <span class="animate-pulse delay-100">🕯️</span>
+                    <span class="animate-pulse delay-200">🕯️</span>
+                    <span class="text-5xl">🎂</span>
+                    <span class="animate-pulse delay-200">🕯️</span>
+                    <span class="animate-pulse delay-100">🕯️</span>
+                    <span class="animate-pulse">🕯️</span>
+                </div>
+
+                <button onclick="triggerCelebration()" class="px-10 py-4 rounded-2xl bg-emerald-500 text-black font-extrabold text-base hover:bg-emerald-400 transition-all duration-300 transform hover:scale-105 shadow-2xl cursor-pointer">
+                    🎁 Open Your Birthday Surprise
+                </button>
+                <div id="wish-message" class="hidden text-xl font-bold text-emerald-300 pt-4 animate-fade-in font-code">
+                    HAPPY BIRTHDAY, ENGR. USAMA! 🥳🥂🔥 May all your career ambitions, system dreams, and deepest prayers materialize!
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERACTIVE ENGINEERING VIBE CAPSULE -->
+        <section class="py-12 px-6 max-w-2xl mx-auto">
+            <div class="glass-card p-8 sm:p-10 rounded-3xl border border-indigo-500/30 text-center space-y-6 neon-indigo">
+                <div class="w-12 h-12 mx-auto bg-indigo-600/20 text-indigo-400 rounded-2xl flex items-center justify-center text-2xl">⚡</div>
+                <div class="space-y-2">
+                    <h3 class="text-2xl font-bold tracking-tight">Select Engineering Vibe Capsule</h3>
+                    <p class="text-zinc-400 text-sm">Choose your current operating mode to unlock a custom developer greeting from Ahmad!</p>
+                </div>
+                
+                <div class="grid grid-cols-3 gap-3 pt-2">
+                    <button onclick="selectVibe('debug')" class="p-3 rounded-xl bg-zinc-900/90 border border-zinc-700 hover:border-emerald-400 text-xs text-zinc-300 font-semibold transition cursor-pointer">
+                        💻 Deep Debug
+                    </button>
+                    <button onclick="selectVibe('architect')" class="p-3 rounded-xl bg-zinc-900/90 border border-zinc-700 hover:border-indigo-400 text-xs text-zinc-300 font-semibold transition cursor-pointer">
+                        🏗️ System Architect
+                    </button>
+                    <button onclick="selectVibe('chill')" class="p-3 rounded-xl bg-zinc-900/90 border border-zinc-700 hover:border-cyan-400 text-xs text-zinc-300 font-semibold transition cursor-pointer">
+                        🎧 Elite Chill
+                    </button>
+                </div>
+
+                <div id="vibeResponse" class="hidden p-4 rounded-xl bg-emerald-950/40 border border-emerald-500/40 text-emerald-200 text-sm leading-relaxed animate-fade-in font-code"></div>
+            </div>
+        </section>
+
+        <!-- PERSONAL BROTHERLY MESSAGE -->
+        <section class="py-16 px-6 max-w-3xl mx-auto">
+            <div class="glass-card p-8 sm:p-12 rounded-3xl space-y-6 neon-emerald">
+                <div class="flex items-center gap-3">
+                    <span class="text-2xl">💬</span>
+                    <h3 class="text-xl font-bold tracking-tight">From Your Developer Brother, Ahmad</h3>
+                </div>
+                <p class="text-zinc-300 text-base sm:text-lg leading-relaxed">
+                    "Bahi, these six chapters capture your remarkable engineering journey of hard work, discipline, and triumphant breakthroughs. From navigating life abroad and mastering the roads to earning your engineering degree and securing your prestigious role at Amazon, I have always looked up to your relentless drive. May this year bring you even greater success, excellent health, and boundless joy. 🤲✨
+                </p>
+                <p class="text-zinc-300 text-base sm:text-lg leading-relaxed">
+                    Keep building, keep conquering new heights, and always stay the incredible mentor you are. 😎❤️"
+                </p>
+                <div class="pt-2 border-t border-white/10 flex justify-between items-center text-xs text-zinc-500 font-code">
+                    <span>STATUS: ALL SYSTEMS NOMINAL</span>
+                    <span class="text-emerald-400 font-bold">BUILT WITH PRECISION &amp; LOVE 🚀</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 🔥 NEW: SECRET SURPRISE VAULT & DEEP DUAS (SEXY ENDING) -->
+        <section class="py-20 px-6 max-w-3xl mx-auto text-center">
+            <div class="glass-card p-10 sm:p-14 rounded-3xl border border-cyan-500/40 neon-cyan space-y-8 relative overflow-hidden">
+                <div class="absolute -right-20 -top-20 w-60 h-60 bg-cyan-600/10 rounded-full blur-3xl pointer-events-none"></div>
+                
+                <span class="text-xs uppercase tracking-[0.3em] text-cyan-400 font-semibold font-code">🔒 Classified Brotherly Vault</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">UNLOCK THE SECRET SURPRISE &amp; DUAS 🤲✨</h2>
+                <p class="text-zinc-400 text-sm max-w-lg mx-auto">
+                    Click below to decrypt the final confidential layer of love, special prayers, and a secret celebration note reserved only for the master engineer!
+                </p>
+
+                <button onclick="revealSecretVault()" id="vault-btn" class="px-8 py-4 rounded-2xl bg-gradient-to-r from-cyan-500 to-indigo-600 text-black font-extrabold text-sm uppercase tracking-wider hover:opacity-95 transition-all duration-300 transform hover:scale-105 shadow-2xl cursor-pointer">
+                    🔓 Decrypt Secret Vault Protocol
+                </button>
+
+                <div id="secret-vault-content" class="hidden text-left space-y-6 pt-6 border-t border-white/10 animate-fade-in font-code">
+                    <div class="p-5 rounded-2xl bg-zinc-950/80 border border-emerald-500/30 space-y-3">
+                        <div class="flex items-center gap-2 text-emerald-400 font-bold text-sm">
+                            <span>✨</span> <span>Special Heartfelt Dua:</span>
+                        </div>
+                        <p class="text-zinc-300 text-xs sm:text-sm leading-relaxed font-sans">
+                            "Allah tala aap ki har mushkil aasan kare, aap ke rizq mein, ilm mein, aur career mein beshumar barkat ata farmae. Aap ki har khwahish jo is dil mein hai, usay behtareen andaz mein qabool farmae. Ameen! 🤲❤️"
+                        </p>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-zinc-950/80 border border-cyan-500/30 space-y-3">
+                        <div class="flex items-center gap-2 text-cyan-400 font-bold text-sm">
+                            <span>🔥</span> <span>Secret Developer Note:</span>
+                        </div>
+                        <p class="text-zinc-300 text-xs sm:text-sm leading-relaxed font-sans">
+                            "Bahi, chahe kitne bhi bugs aayein ya deadlines hon, you always crush it. Aaj ka din sirf aap ki celebration ka hai—no code, no stress, sirf pure vibes aur celebration! Enjoy to the maximum! 🥂🚀"
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center py-12 text-xs text-zinc-600 font-code">
+            &copy; 2026 Engr. Usama Bin Tariq Birthday Protocol. Engineered with love by Ahmad bin Tariq. All Rights Reserved. ✨
+        </footer>
+    </div>
+
+    <!-- JAVASCRIPT CONTROL LOGIC -->
+    <script>
+        function launchExperience() {
+            const loader = document.getElementById('boot-loader');
+            const mainContent = document.getElementById('main-content');
+            
+            loader.style.opacity = '0';
+            setTimeout(() => {
+                loader.style.display = 'none';
+                mainContent.classList.remove('opacity-0');
+            }, 700);
+        }
+
+        function triggerCelebration() {
+            const wishMsg = document.getElementById('wish-message');
+            wishMsg.classList.remove('hidden');
+
+            confetti({
+                particleCount: 150,
+                spread: 90,
+                origin: { y: 0.6 }
+            });
+        }
+
+        function selectVibe(type) {
+            const vibeBox = document.getElementById('vibeResponse');
+            vibeBox.classList.remove('hidden');
+
+            if(type === 'debug') {
+                vibeBox.innerHTML = "💻 <strong>Debug Mode Active:</strong> Spotting bugs in life and code with sharp focus. Let's solve the next big challenge!";
+            } else if(type === 'architect') {
+                vibeBox.innerHTML = "🏗️ <strong>System Architect Mode:</strong> Structuring grand blueprints for career growth, scaling limits, and conquering new milestones!";
+            } else if(type === 'chill') {
+                vibeBox.innerHTML = "🎧 <strong>Elite Chill Mode:</strong> Good music, calm mindset, unstoppable momentum. Enjoy your special day to the fullest, bahi!";
+            }
+        }
+
+        function revealSecretVault() {
+            const vaultContent = document.getElementById('secret-vault-content');
+            const vaultBtn = document.getElementById('vault-btn');
+            
+            vaultContent.classList.remove('hidden');
+            vaultBtn.innerText = "🔒 Vault Unlocked Successfully ✨";
+            vaultBtn.disabled = true;
+            vaultBtn.classList.add('opacity-75', 'cursor-not-allowed');
+
+            // Mega Confetti Blast for Secret Vault
+            confetti({
+                particleCount: 200,
+                spread: 120,
+                origin: { y: 0.7 }
+            });
         }
     </script>
 </body>
